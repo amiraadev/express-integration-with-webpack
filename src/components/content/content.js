@@ -1,9 +1,9 @@
 // import "./content.css"
-// import image from "./ai_image.jpg"
+import image from "./ai_image.jpg"
 class Content {
     render(){
         const img = document.createElement("img");
-        img.src="image";
+        img.src= image ;
         img.alt="couldn't find the image";
         const body = document.querySelector("body")
         const paragraph = document.createElement("p");
