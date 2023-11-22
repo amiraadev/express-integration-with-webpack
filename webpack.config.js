@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry:"./src/index.js",
+    entry:{"bundle":"./src/index.js"},
     output:{
         filename:"bundle.js",
         path:path.resolve(__dirname,"./dist"),
@@ -26,8 +26,11 @@ module.exports = {
         new MiniCssExtractPlugin({filename:"style.css"}),
         new HtmlWebpackPlugin({
             filename:"index.html",
-            chunks:["index.js"],
+            chunks: ['bundle'],
             title:"Express integration with webpack",
+            meta:{
+                description:'test description 1'
+            },
             minify:false
         })
     ]
