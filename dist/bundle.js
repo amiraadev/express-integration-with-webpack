@@ -31,10 +31,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ai_image_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 // import "./content.css"
 
+// import ai_image from "./kiwi.jpg"
 class Content {
     render(){
         const img = document.createElement("img");
         img.src= _ai_image_jpg__WEBPACK_IMPORTED_MODULE_0__ ;
+        // img.src= "./dist/687bee259ccec0b47f48.jpg" ;
         img.alt="couldn't find the image";
         const body = document.querySelector("body")
         const paragraph = document.createElement("p");
@@ -109,7 +111,7 @@ module.exports = __webpack_require__.p + "687bee259ccec0b47f48.jpg";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "";
+/******/ 		__webpack_require__.p = "./dist/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -129,19 +131,7 @@ const content = new _components_content_content_js__WEBPACK_IMPORTED_MODULE_1__[
     content.render();
 
 
-// function addImage() {
-//     document.addEventListener("DOMContentLoaded", () => {
-//         const img = document.createElement('img');
-//         img.alt = "altText";
-//         img.width = 300;
-//         // img.src = image;
-//         img.src = "./components/content/ai_image.jpg";
 
-//         // Append the image to the existing body
-//         document.body.appendChild(img);
-//     });
-// }
-// addImage()
 })();
 
 /******/ })()

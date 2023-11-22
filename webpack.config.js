@@ -5,7 +5,7 @@ module.exports = {
     output:{
         filename:"bundle.js",
         path:path.resolve(__dirname,"./dist"),
-        publicPath:''
+        publicPath:'./dist/'
     },
     mode:"none",
     module:{
@@ -13,6 +13,10 @@ module.exports = {
             {
                     test:/\.(png|jpg)$/,
                     type:'asset/resource'
+            },
+            {
+                    test:/\.css$/,
+                    use:["style-loader","css-loader"]
             },
         ]
     }
