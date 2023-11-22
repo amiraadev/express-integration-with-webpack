@@ -1,4 +1,4 @@
-// import "./content.css"
+import "./content.css"
 import ai_image from "./ai_image.jpg"
 // import ai_image from "./kiwi.jpg"
 class Content {
