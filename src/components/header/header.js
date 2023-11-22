@@ -1,4 +1,4 @@
-import "./header.css"
+// import "./header.css"
 class Header {
     render(){
         const h1 = document.createElement("h1");
